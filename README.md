@@ -7,7 +7,7 @@ Ideally, you'd shuffle the tiles by clicking the shuffle button, which also star
 #### design
 
 I looked at the [previous version of this project](https://tortaruga.github.io/vanilla-js-games/html/15-puzzle.html) and I was unsure whether to be depressed or grossed out, so I decided to be proactive instead and code a better one.
-I had the idea to randomly generate a color for each tile, and I loved the way it looked, but since life is hard and doesn't handle anything to you for free this also meant that I broke the logic for everything else. 
+I had the idea to randomly generate a color for each tile, and I loved the way it looked, but since life is hard and doesn't hand anything to you for free this also meant that I broke the logic for everything else. 
 
 ###### the problem
 The way the code worked before was by rendering the board with the tiles *every time* a move was made. This is because you need to update two "boards" everytime: the actual, visual board that the user sees, and the array representing the position of each tile. Updating the array, deleting the old board and creating a new one reflecting the new array was the easiest way to achieve it. 
